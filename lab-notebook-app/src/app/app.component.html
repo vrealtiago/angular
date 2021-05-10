@@ -1,0 +1,27 @@
+<div class="container boxPosition">
+  <div class="row">
+    <div class="col-sm-4">
+      <label for="search" class="form-label">Search word:</label>
+      <input type="text" class="form-control" id="search" aria-describedby="searchResult" [(ngModel)]="selectedWord" (keyup)="checkWord()" name = 'filter'>
+      <div id="searchResult" class="form-text">
+        <span *ngIf="qtyWords > 0">Quantity of same words found: {{qtyWords}}<br /></span>
+        <span *ngIf="similarWordList != ''">Similar words found: {{similarWordList}}</span>
+      </div>
+      <br />
+      <div class="p-0 bg-light">
+        <h6><strong>*Captions: </strong></h6>
+        <span>Words found will have this <mark>mark</mark>, end similar words will have this <span class="similarWord">mark</span></span><br />
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <label for="textBook" class="form-label">Text:</label>
+      <textarea type="text" class="form-control" id="textBook" [(ngModel)]="selectedText" (keyup)="checkWord()" name = 'text' style="min-height: 220px"></textarea>
+    </div>
+    <br />
+    <div class="col-sm-12 p-0 bg-light boxPosition">
+      <div id="resultContent"></div>
+    </div>
+
+  </div>
+</div>
+

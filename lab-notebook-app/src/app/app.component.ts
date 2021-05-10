@@ -31,7 +31,7 @@ export class AppComponent implements OnInit{
   findSelectedWords(): any {
     const txt = this.selectedText.split(/\s|\\n/g);
     const similarList = [];
-    const partOfWord = this.selectedWord.substring(0, this.selectedWord.length > 3 ? 3 : this.selectedWord.length / 2);
+    const partOfWord = this.selectedWord.substring(0, this.selectedWord.length / 2);
     const similarRegex = new RegExp('((?<!\\w)' + partOfWord + '\\w+)', 'gi');
     txt.forEach((item, index) => {
       if (item == this.selectedWord) {

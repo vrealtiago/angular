@@ -4,7 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Prerequisite for start project
   - [npm](https://www.npmjs.com/get-npm) 
-  - [node js](https://nodejs.org/en/download/)
+  - [node js](https://nodejs.org/en/download
+  
+## Installation
+
+Run `npm install` in lab-notebook-app to install all dependencies.
 
 ## Development server
 

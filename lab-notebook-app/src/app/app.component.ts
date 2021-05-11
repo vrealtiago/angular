@@ -10,9 +10,7 @@ export class AppComponent implements OnInit{
   selectedWord = '';
   qtyWords = 0;
   similarWordList = '';
-  selectedText = 'Word Words Wor word fom kok pip Word loko mesmo wwooww worlock wokaka\n' +
-    '\n' +
-    'Word Word Word word';
+  selectedText = '';
   resultBody;
   constructor() {
   }
